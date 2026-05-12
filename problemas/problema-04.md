@@ -1,6 +1,5 @@
 # Problema 4 — Dados
 
-**Responsable:** Compañero 2  
 > Solución redactada con asistencia de Claude (Anthropic) y revisada por el equipo.
 
 ---
@@ -81,7 +80,3 @@ E[D_1 + D_2] = E[D_1] + E[D_2] = 3.5 + 3.5 = 7
 La herramienta principal es la linealidad de la esperanza. No hace falta que los eventos sean independientes para sumar esperanzas; solo necesitamos conocer el valor esperado de cada indicador.
 
 ---
-
-## Video
-
-> _Link al video — se agrega al final_

@@ -1,6 +1,5 @@
 # Problema 3 — Problema de contratación
 
-**Responsable:** Compañero 2  
 > Solución redactada con asistencia de Claude (Anthropic) y revisada por el equipo.
 
 ---
@@ -74,7 +73,3 @@ E[X] = Θ(log n)
 Aunque en el peor caso podríamos contratar a todos los candidatos, si el orden de entrevistas es aleatorio, el número esperado de contrataciones crece solo logarítmicamente.
 
 ---
-
-## Video
-
-> _Link al video — se agrega al final_

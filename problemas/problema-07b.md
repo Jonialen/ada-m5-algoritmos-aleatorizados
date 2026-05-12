@@ -1,6 +1,7 @@
 # Problema 7b — Caso promedio de Fun-sort
 
-**Responsable:** Compañero 3  
+**Responsable:** Compañero 3
+
 > Solución redactada con asistencia de Claude (Anthropic) y revisada por el equipo.
 
 ---
@@ -70,7 +71,3 @@ La mejora conceptual es:
 El caso promedio parte del hecho de que una permutación aleatoria tiene `n(n-1)/4` inversiones esperadas. Por eso, cualquier algoritmo que avance eliminando inversiones tiene una base de análisis ligada a `Θ(n²)` avances útiles, más el costo de encontrar cada avance.
 
 ---
-
-## Video
-
-> _Link al video — se agrega al final_

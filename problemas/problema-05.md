@@ -1,6 +1,7 @@
 # Problema 5 — Inversiones
 
-**Responsable:** Compañero 3  
+**Responsable:** Compañero 3
+
 > Solución redactada con asistencia de Claude (Anthropic) y revisada por el equipo.
 
 ---
@@ -92,7 +93,3 @@ E[inversiones] = n(n-1)/4
 Esto es exactamente la mitad del máximo posible de inversiones.
 
 ---
-
-## Video
-
-> _Link al video — se agrega al final_

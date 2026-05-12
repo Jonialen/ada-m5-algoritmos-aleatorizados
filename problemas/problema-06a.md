@@ -1,13 +1,14 @@
 # Problema 6a — Explicar la fórmula de P[Iₖ]
 
-**Responsable:** Compañero 3  
+**Responsable:** Compañero 3
+
 > Solución redactada con asistencia de Claude (Anthropic) y revisada por el equipo.
 
 ---
 
 ## Enunciado
 
-Explique la fórmula usada para calcular `P[Iₖ]` en la prueba del Teorema 2 del paper *"Sorting the Slow Way"*.
+Explique la fórmula usada para calcular `P[Iₖ]` en la prueba del Teorema 2 del paper _"Sorting the Slow Way"_.
 
 ---
 
@@ -62,7 +63,3 @@ P[I₃] = 1/3! = 1/6
 La fórmula aparece porque pasar las primeras comparaciones exige que un subconjunto de elementos esté en orden creciente. Entre `k!` órdenes relativos posibles, solo uno cumple eso.
 
 ---
-
-## Video
-
-> _Link al video — se agrega al final_

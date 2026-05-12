@@ -9,7 +9,7 @@
 
 ## Enunciado
 
-En la sección 2.3 del paper *"Sorting the Slow Way"*, ¿por qué la variable aleatoria `I` que cuenta el número de iteraciones del algoritmo tiene distribución geométrica?
+En la sección 2.3 del paper _"Sorting the Slow Way"_, ¿por qué la variable aleatoria `I` que cuenta el número de iteraciones del algoritmo tiene distribución geométrica?
 
 ---
 
@@ -18,6 +18,7 @@ En la sección 2.3 del paper *"Sorting the Slow Way"*, ¿por qué la variable al
 ### Qué es una iteración de bogo-sort
 
 Una iteración consiste en:
+
 1. Verificar si el arreglo está ordenado.
 2. Si no lo está → hacer un **shuffle uniforme aleatorio** (permutación uniformemente aleatoria entre las `n!` posibles).
 
@@ -53,13 +54,13 @@ Var[I] = (1−p)/p² ≈ (n!)²
 
 ### Consecuencias prácticas
 
-| n | n! | E[iteraciones] |
-|---|---|---|
-| 3 | 6 | 6 |
-| 4 | 24 | 24 |
-| 5 | 120 | 120 |
-| 6 | 720 | 720 |
-| 8 | 40 320 | 40 320 |
+| n   | n!     | E[iteraciones] |
+| --- | ------ | -------------- |
+| 3   | 6      | 6              |
+| 4   | 24     | 24             |
+| 5   | 120    | 120            |
+| 6   | 720    | 720            |
+| 8   | 40 320 | 40 320         |
 
 El crecimiento es **superexponencial** — bogo-sort es absurdamente ineficiente.
 
@@ -103,7 +104,3 @@ n = 5  (n! = 120, 500 ensayos)
 Los valores simulados convergen a `n!`, confirmando que `I ~ Geom(1/n!)`.
 
 ---
-
-## Video
-
-> _Link al video — se agrega al final_

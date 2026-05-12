@@ -1,7 +1,6 @@
 # Problema 2 — Desessesgar una moneda sesgada
 
-**Responsable:** Compañero 2  
-> Solución redactada con asistencia de Claude (Anthropic) y revisada por el equipo.
+> Solución propuesta por el equipo, redactada con asistencia de Claude (Anthropic) y revisada por el equipo.
 
 ---
 
@@ -11,16 +10,16 @@ Construir un generador de bits justos usando una moneda sesgada, es decir, una f
 
 ---
 
-## Solución: truco de Von Neumann
+## Solución: Truco de Von Neumann
 
 Lanzamos la moneda dos veces:
 
-| Resultado | Acción |
-|---|---|
-| `01` | retornar `0` |
-| `10` | retornar `1` |
-| `00` | descartar y repetir |
-| `11` | descartar y repetir |
+| Resultado | Acción              |
+| --------- | ------------------- |
+| `01`      | retornar `0`        |
+| `10`      | retornar `1`        |
+| `00`      | descartar y repetir |
+| `11`      | descartar y repetir |
 
 La clave es que:
 
@@ -71,7 +70,3 @@ func fairBitFromBiasedCoin() int {
 ```
 
 ---
-
-## Video
-
-> _Link al video — se agrega al final_

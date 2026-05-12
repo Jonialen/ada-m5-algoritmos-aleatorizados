@@ -9,7 +9,7 @@
 
 ## Enunciado
 
-El algoritmo guess-sort presenta una mejora con respecto a bozo-sort⁺_opt (sección 3 del paper *"Fun-sort"*). ¿Cuál es la diferencia que permite esta mejora?
+El algoritmo guess-sort presenta una mejora con respecto a bozo-sort⁺_opt (sección 3 del paper _"Fun-sort"_). ¿Cuál es la diferencia que permite esta mejora?
 
 ---
 
@@ -18,6 +18,7 @@ El algoritmo guess-sort presenta una mejora con respecto a bozo-sort⁺_opt (sec
 ### bozo-sort⁺_opt
 
 En cada **paso**:
+
 1. Elegir dos índices `i, j` al azar.
 2. Si `i < j` y `A[i] > A[j]` (par malo) → intercambiar.
 3. Si el par está bien ordenado → **paso desperdiciado**, no hay progreso.
@@ -27,6 +28,7 @@ El problema: a medida que el arreglo se ordena, la fracción de pares malos decr
 ### guess-sort
 
 En cada **swap**:
+
 1. Seguir eligiendo pares al azar **hasta encontrar uno malo**.
 2. Cuando se encuentra → intercambiar.
 
@@ -36,11 +38,11 @@ La diferencia clave: **ningún intercambio se desperdicia**. Cada swap se hace s
 
 ## Por qué guess-sort mejora
 
-| Métrica | bozo-sort⁺_opt | guess-sort |
-|---|---|---|
-| Pasos por swap | > 1 (muchos desperdiciados) | siempre = 1 (definición) |
-| Swaps totales | Incluye pasos sin swap | Todos los swaps son útiles |
-| Swaps/pasos | < 100% | ≈ 100% |
+| Métrica        | bozo-sort⁺_opt              | guess-sort                 |
+| -------------- | --------------------------- | -------------------------- |
+| Pasos por swap | > 1 (muchos desperdiciados) | siempre = 1 (definición)   |
+| Swaps totales  | Incluye pasos sin swap      | Todos los swaps son útiles |
+| Swaps/pasos    | < 100%                      | ≈ 100%                     |
 
 En guess-sort, todos los swaps son útiles porque siempre se aplican sobre una inversión. En bozo-sort⁺_opt, pueden aparecer muchos pasos extra en blanco porque el algoritmo puede escoger pares que ya estaban bien ordenados.
 
@@ -93,7 +95,3 @@ C(8,2) = 28   (máximo de inversiones)
 Ambos hacen los mismos swaps, pero guess-sort usa muchas menos operaciones totales porque no desperdicia pasos en pares buenos.
 
 ---
-
-## Video
-
-> _Link al video — se agrega al final_
