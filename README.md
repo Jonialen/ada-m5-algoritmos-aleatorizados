@@ -58,9 +58,15 @@ Todo el código está en [`/codigo`](./codigo/).
 
 ```
 codigo/
-  random.js        # Problema 1
-  bogo.js          # Problema 6c
-  guess-sort.js    # Problema 7a
+  random.go        # Problema 1
+  bogo.go          # Problema 6c
+  guess_sort.go    # Problema 7a
 ```
 
-Para ejecutar cualquier archivo: `node codigo/<archivo>.js`
+Para ejecutar cualquier archivo:
+
+```bash
+go run codigo/random.go
+go run codigo/bogo.go
+go run codigo/guess_sort.go
+```

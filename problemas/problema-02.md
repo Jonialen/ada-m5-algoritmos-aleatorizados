@@ -57,16 +57,16 @@ E[lanzamientos] = 2 · E[rondas] = 1 / (p(1-p))
 
 ## Pseudocódigo
 
-```js
-function fairBitFromBiasedCoin() {
-  while (true) {
-    const x = biasedCoin();
-    const y = biasedCoin();
+```go
+func fairBitFromBiasedCoin() int {
+    for {
+        x := biasedCoin()
+        y := biasedCoin()
 
-    if (x === 0 && y === 1) return 0;
-    if (x === 1 && y === 0) return 1;
-    // 00 y 11 se descartan
-  }
+        if x == 0 && y == 1 { return 0 }
+        if x == 1 && y == 0 { return 1 }
+        // 00 y 11 se descartan
+    }
 }
 ```
 

@@ -74,25 +74,23 @@ El tiempo esperado es **O(k) = O(log(b−a+1))** bits generados en promedio.
 
 ## Implementación
 
-Ver [`../codigo/random.js`](../codigo/random.js)
+Ver [`../codigo/random.go`](../codigo/random.go)
 
-```js
-function random01() {
-  return Math.random() < 0.5 ? 0 : 1;
-}
+```go
+func randomAB(a, b int) (value int, attempts int) {
+    rangeSize := b - a + 1
+    k := int(math.Ceil(math.Log2(float64(rangeSize))))
 
-function randomAB(a, b) {
-  const range = b - a + 1;
-  const k = Math.ceil(Math.log2(range));
-
-  while (true) {
-    let r = 0;
-    for (let i = 0; i < k; i++) {
-      r = r * 2 + random01(); // construye número binario bit a bit
+    for {
+        attempts++
+        r := 0
+        for i := 0; i < k; i++ {
+            r = r*2 + random01()
+        }
+        if r < rangeSize {
+            return a + r, attempts
+        }
     }
-    if (r < range) return a + r; // ✓ en rango
-    // si no → descartar y repetir
-  }
 }
 ```
 

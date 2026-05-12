@@ -64,30 +64,19 @@ donde `H(I₀)` es el número armónico — análogo al problema del conteo de i
 
 ## Implementación
 
-Ver [`../codigo/guess-sort.js`](../codigo/guess-sort.js)
+Ver [`../codigo/guess_sort.go`](../codigo/guess_sort.go)
 
-```js
+```go
 // bozo-sort⁺_opt: puede desperdiciar pasos en pares buenos
-function bozoSortOptStep(arr) {
-  let steps = 0, swaps = 0;
-  while (!isSorted(arr)) {
-    let i = randInt(n), j = randInt(n);
-    if (i > j) [i, j] = [j, i];
-    steps++;
-    if (arr[i] > arr[j]) { swap(arr, i, j); swaps++; }
-    // si no → paso desperdiciado
-  }
+func bozoSortOpt(arr []int) (steps int, swaps int) {
+    // elige pares al azar; si el par está bien ordenado, el paso se pierde
+    return steps, swaps
 }
 
 // guess-sort: busca par malo antes de intercambiar
-function guessSortStep(arr) {
-  let comparisons = 0, swaps = 0;
-  while (!isSorted(arr)) {
-    let i, j;
-    do { i = randInt(n); j = randInt(n); comparisons++; }
-    while (i === j || i > j || arr[i] <= arr[j]);
-    swap(arr, i, j); swaps++; // siempre útil
-  }
+func guessSort(arr []int) (comparisons int, swaps int) {
+    // repite hasta encontrar un par invertido; cada swap es útil
+    return comparisons, swaps
 }
 ```
 

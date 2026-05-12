@@ -67,20 +67,20 @@ El crecimiento es **superexponencial** — bogo-sort es absurdamente ineficiente
 
 ## Implementación
 
-Ver [`../codigo/bogo.js`](../codigo/bogo.js)
+Ver [`../codigo/bogo.go`](../codigo/bogo.go)
 
-```js
-function bogoSort(arr) {
-  let current = [...arr];
-  let iterations = 0;
+```go
+func bogoSort(arr []int) (iterations int, swaps int) {
+    current := append([]int(nil), arr...)
 
-  while (true) {
-    current = shuffle(current); // shuffle uniforme (Fisher-Yates)
-    iterations++;
-    if (isSorted(current)) break;
-  }
+    for {
+        current = shuffle(current)
+        iterations++
+        swaps += len(current) - 1
+        if isSorted(current) { break }
+    }
 
-  return iterations;
+    return iterations, swaps
 }
 ```
 
