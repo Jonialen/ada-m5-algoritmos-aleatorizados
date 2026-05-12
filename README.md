@@ -5,6 +5,8 @@ Homework M5 · [Página del curso](https://ada-m5-homework.vercel.app/)
 
 > Generado con asistencia de Claude (Anthropic). Todo el código y análisis fue revisado y explicado por el equipo.
 
+[Link del Video](https://youtu.be/9z4yN3H_30M)
+
 ---
 
 ## Integrantes y división
